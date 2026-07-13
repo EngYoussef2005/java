@@ -1,0 +1,1 @@
+console.log('"I\'m In"\nLove "......"\n++ With ++\n"JavaScript"');
