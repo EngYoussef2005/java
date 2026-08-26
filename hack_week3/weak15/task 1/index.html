@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- استدعاء الخطوط الثلاثة من Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f6f6f6;
+    }
+    
+    .selectors {
+      margin-bottom: 30px;
+    }
+
+    select {
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .test-box {
+      width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- إنشاء 3 Select Boxes -->
+  <div class="selectors">
+    <!-- الأول: للخطوط -->
+    <select id="font-select">
+      <option value="Open Sans">Open Sans</option>
+      <option value="Cairo">Cairo</option>
+      <option value="Roboto">Roboto</option>
+    </select>
+
+    <!-- الثاني: للالألوان (6 ألوان مختارة) -->
+    <select id="color-select">
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="purple">Purple</option>
+      <option value="orange">Orange</option>
+    </select>
+
+    <!-- الثالث: لأحجام الخطوط من 16 إلى 30 -->
+    <select id="size-select">
+      <option value="16px">16px</option>
+      <option value="18px">18px</option>
+      <option value="20px">20px</option>
+      <option value="24px">24px</option>
+      <option value="28px">28px</option>
+      <option value="30px">30px</option>
+    </select>
+  </div>
+
+  <!-- عنصر لتطبيق التغييرات عليه -->
+  <div class="test-box">
+    مرحباً بك في أكاديمية الزيرو! هذا النص يتغير بناءً على اختياراتك  
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

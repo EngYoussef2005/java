@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+  <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+  <input type="text" name="texts" class="input" placeholder="Elements Text" />
+  <select name="type" class="input">
+    <option value="Div">Div</option>
+    <option value="Section">Section</option>
+  </select>
+  <input type="submit" name="create" value="Create" />
+  <div class="results"></div>
+</form>
+
+<style>
+    .results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: #ff3e3e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  flex: 30%;
+  border-radius: 4px;
+}
+</style>
+    <script src="main.js"></script>
+</body>
+</html>
